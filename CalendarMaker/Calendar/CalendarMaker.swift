@@ -15,17 +15,17 @@ public class CalendarMaker {
     
     private let tagCalendarDayMainLabel_NthWeek = 1910106
     
-    weak var delegate: CalendarMakerDelegate? {
+    public weak var delegate: CalendarMakerDelegate? {
         didSet { updateConfiguration() }
     }
     
-    init(configuration: CalendarConfiguration = CalendarConfiguration()) {
+    public init(configuration: CalendarConfiguration = CalendarConfiguration()) {
         self.configuration = configuration
     }
     
     /// Created view has constraints of width and height.
     /// You should set constraints of position X and Y
-    func createCalendarView(year: UInt, month: Int) -> UIView? {
+    public func createCalendarView(year: UInt, month: Int) -> UIView? {
         guard let month = Month(rawValue: month) else { return nil }
         
         updateConfiguration()

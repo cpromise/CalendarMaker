@@ -62,7 +62,7 @@ public struct CalendarConfiguration {
         return defaultDaysList
     }
     
-    init() { }
+    public init() { }
 }
 
 
