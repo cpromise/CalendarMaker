@@ -15,8 +15,6 @@ pod 'CalendarMaker'
 
 ### How to use
 
-Explain what these tests test and why
-
 ```
 import UIKit
 import CalendarMaker
